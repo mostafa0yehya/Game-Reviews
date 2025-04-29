@@ -10,7 +10,7 @@ export class Details {
   async getGame(id) {
     document.querySelector(".games .loading").classList.remove("d-none");
     try {
-      let url = `https:free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`;
+      let url = `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`;
       let response = await fetch(url, {
         headers: {
           "x-rapidapi-host": "free-to-play-games-database.p.rapidapi.com",
