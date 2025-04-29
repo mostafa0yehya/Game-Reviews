@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+}
+a {
+  color: inherit;
+}
+body {
+  background-color: var(--main-color);
+  font-family: "Comfortaa", cursive;
+}
+
+nav.navbar {
+  background-color: rgb(58, 73, 123) !important;
+  border-radius: 15px;
+  margin-inline: auto;
+  color: white;
+}
+
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo .navbar-brand {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+nav .logo img {
+  width: 45px;
+  margin-right: 5px;
+}
+
+.navbar-collapse a {
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: 0.3s all;
+  color: white;
+}
+
+.navbar-collapse a.nav-link.active,
+.navbar-collapse a.nav-link:hover {
+  color: #09c;
+}
+.navbar-collapse a.nav-link.active:focus {
+  color: #09c !important;
+}
+.games {
+  position: relative;
+}
+
+.game.card {
+  background-color: var(--main-color) !important;
+  overflow: hidden;
+  filter: grayscale(0.7);
+  transition: filter 0.5s, transform 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.game.card img {
+  transition: 0.3s all;
+}
+.game.card:hover {
+  filter: grayscale(0);
+}
+.game.card:hover img {
+  transform: scale(1.1);
+}
+.game .card-body {
+  background-color: var(--main-color);
+  color: white;
+}
+.game .card-title {
+  font-size: 14px;
+  margin: 0;
+}
+.game .card-body span.badge {
+  background-color: rgb(58, 73, 123) !important;
+}
+.game .card-footer span {
+  background-color: #09c !important;
+}
+
+.loading {
+  position: fixed;
+  inset: 0;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background: #ff3d00;
+  width: 3px;
+  height: 24px;
+  transform: translateX(-50%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.card-footer{
+  font-size: 14px;
+}

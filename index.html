@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="games">
+      <div class="loading">
+        <span class="loader"></span>
+      </div>
+      <header>
+        <img src="./images/wraper.png" class="w-100" alt="game photo" />
+      </header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary position-sticky col-md-10 col-lg-8"
+      >
+        <div class="container">
+          <div class="logo">
+            <img src="./images/logo-sm.png" alt="" />
+            <a class="navbar-brand" href="#"> Game Reviews </a>
+          </div>
+          <button
+            class="navbar-toggler border-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><i class="fa-solid fa-bars text-white"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 ms-auto mb-lg-0 text-white">
+              <li class="nav-item">
+                <a class="nav-link" href="#">mmorpg </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Strategy </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">shooter </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fighting </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Social </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="cards py-5">
+        <div class="container">
+          <div class="row gy-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="detailsContent" class="d-none">
+      <div class="container">
+        <header class="hstack text-white justify-content-between">
+          <h1 class="text-center h3 py-4">Details Game</h1>
+          <button class="btn-close btn-close-white" id="btnClose"></button>
+        </header>
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
